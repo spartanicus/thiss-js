@@ -9,10 +9,9 @@
 <body class="site">
 
 	<header>
-		<h2 class="accessHeader account">
-			<img alt="" class="header-ra21-logo" src="<%= require('../assets/RA21-Black.svg') %>"/><span class="light">Access to</span>
-			<span class="sp_title account-pill"></span>
-		</h2>
+		<h1>
+			NIAID Discovery and Collaboration Platform Login
+		</h1>
 	</header>
 	<main class="content">
 		<div class="container" id="dsclient">
@@ -46,7 +45,7 @@
 							<i class="fa fa-search"></i>
 							<input tabindex="0" type="text" autocomplete="off" id="searchinput" type="search" placeholder="" aria-label="search" autofocus>
 						</div>
-						<h3>Examples: Science Institute, Lee@uni.edu, UCLA</h3>
+						<h3>Examples: NIH, ICER, Johns Hopkins</h3>
 						<div class="d-none" id="searching">
 							<h3>Searching for institutions...</h3>
 							<div class="loader"></div>
@@ -58,19 +57,91 @@
 				</div>
 			</div>
 
-      	</div>
+		</div>
+
+		<div class="container" id="ds-common-choices">
+			<h1>Or Select a Common Choice</h1>
+			<div id="common-choices-box">
+				<ul class="choices">
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.icermali.org%2Fidp%2Fshibboleth">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/icer_mali_80_60.png')%>" alt=""></div>
+							<div class="idp_text">ICER - Mali</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Anih.gov">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/nih_80_60.png')%>" alt=""></div>
+							<div class="idp_text">National Institutes of Health</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fproxy.safire.ac.za%2Fbirk.php%2Fsrvslsfed001.uct.ac.za%2Fsimplesaml%2Fsaml2%2Fidp%2Fmetadata.php">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/uct_80_60.png')%>" alt=""></div>
+							<div class="idp_text">University of Cape Town</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/google_80_60.png')%>" alt=""></div>
+							<div class="idp_text">Google</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.iceruganda.org%2Fidp%2Fshibboleth">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/icer_uganda_80_60.png')%>" alt=""></div>
+							<div class="idp_text">ICER - Uganda</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/win_live_80_60.png')%>" alt=""></div>
+							<div class="idp_text">Microsoft Account<!--(Office 365, Windows Live, Hotmail)--></div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwebauth.umaryland.edu%2Fidp%2Fshibboleth">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/umb_80_60.png')%>" alt=""></div>
+							<div class="idp_text">University of Maryland Baltimore</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fyahoo.cirrusidentity.com%2Fgateway">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/yahoo_80_60.png')%>" alt=""></div>
+							<div class="idp_text">Yahoo!</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Ajohnshopkins.edu">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/jhu_80_60.png')%>" alt=""></div>
+							<div class="idp_text">Johns Hopkins University</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fidp.ina-respond.net%2Fidp">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/ina_respond_80_60.png')%>" alt=""></div>
+							<div class="idp_text">INA-RESPOND</div>
+						</a>
+					</li>
+					<li>
+						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flinkedin.cirrusidentity.com%2Fgateway">
+							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/linkedin.png')%>" alt=""></div>
+							<div class="idp_text">LinkedIn</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</main>
 
 	<footer>
-		<div class="footer-credential">
-			<p>
-				<span class="footer-pill">
-					<img class="footer-ra21-logo" src="<%= require('../assets/RA21-White.svg') %>">
-					RA21
-				</span>
-				Resource Access for the 21st Century
-				<a href="https://ra21.org/index.php/what-is-ra21/">About Us</a>
-			</p>
+		<div class="footer-logo">
+			<img class="niaid-logo" alt="NIAID Logo" src="<%= require('../assets/niaid/niaid_logo.png') %>">
+		</div>
+		<div class="footer-links">
+			<a href="https://www.niaid.nih.gov/">National Institute of Allergy and Infectious Diseases</a><br>
+			<a href="https://www.nih.gov/">National Institutes of Health</a>,
+			<a href="https://www.hhs.gov/">U.S. Department of Health & Human Services</a>
 		</div>
 	</footer>
 

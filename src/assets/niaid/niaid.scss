@@ -1,0 +1,82 @@
+/* NIAID Styles and Overrides */
+/* Global and Mobile styles first; a single media breakpoint below that. */
+
+/* HEADER */
+header {
+  height: unset;
+  padding: 2em 1em 1em;
+  text-align: center;
+}
+header h1 {
+  font-size: 1.2em;
+  margin: 1em;
+}
+/* GENERAL */
+a {
+  color: #004799; /* ensure accessible contrast */
+}
+.container {
+  min-height: unset !important;
+  max-width: 800px;
+}
+.content {
+  min-height: unset;
+}
+/* COMMON CHOICES */
+#ds-common-choices {
+  margin-top: 2em;
+}
+#ds-common-choices .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  justify-content: center;
+}
+#ds-common-choices .choices li {
+  flex-basis: 28%;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+#ds-common-choices .choices img {
+  width: 60px;
+  height: auto;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  height: unset;
+  margin-top: 3em;
+  padding: 2em 2em 1em 2em;
+}
+footer .footer-logo img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 1em;
+}
+footer .footer-links {
+  font-size: 1em;
+}
+
+/* LARGER DEVICES (tablets on up) */
+/* Primary Break Point */
+@media only screen and (min-width : 768px) {
+  /* GENERAL */
+  /* main { -- XXX keep this in case we choose to make the choices collapsible and fix the footer
+    margin-bottom: 160px; / * offset footer * /
+  } */
+  /* FOOTER */
+  footer {
+    /*position: fixed; -- XXX as above, keep in case we make choices collapsible; if we do, we'll want to fix the footer.
+    bottom: 0;
+    width: 100%;*/
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  footer .footer-links {
+    text-align: right;
+  }
+}
