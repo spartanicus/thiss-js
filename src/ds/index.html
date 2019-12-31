@@ -63,68 +63,69 @@
 			<h1>Or Select a Common Choice</h1>
 			<div id="common-choices-box">
 				<ul class="choices">
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.icermali.org%2Fidp%2Fshibboleth">
+					<li><!--  href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.icermali.org%2Fidp%2Fshibboleth" -->
+						<a class="institution identityprovider" data-href="https://login.icermali.org/idp/shibboleth">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/icer_mali_80_60.png')%>" alt=""></div>
 							<div class="idp_text">ICER - Mali</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Anih.gov">
+					<li><!--  href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Anih.gov" -->
+						<a class="institution identityprovider" data-href="urn:mace:incommon:nih.gov">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/nih_80_60.png')%>" alt=""></div>
 							<div class="idp_text">National Institutes of Health</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fproxy.safire.ac.za%2Fbirk.php%2Fsrvslsfed001.uct.ac.za%2Fsimplesaml%2Fsaml2%2Fidp%2Fmetadata.php">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fproxy.safire.ac.za%2Fbirk.php%2Fsrvslsfed001.uct.ac.za%2Fsimplesaml%2Fsaml2%2Fidp%2Fmetadata.php">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/uct_80_60.png')%>" alt=""></div>
 							<div class="idp_text">University of Cape Town</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/google_80_60.png')%>" alt=""></div>
 							<div class="idp_text">Google</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.iceruganda.org%2Fidp%2Fshibboleth">
+					<li><!--  href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flogin.iceruganda.org%2Fidp%2Fshibboleth" -->
+						<a class="institution identityprovider" data-href="https://login.iceruganda.org/idp/shibboleth">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/icer_uganda_80_60.png')%>" alt=""></div>
 							<div class="idp_text">ICER - Uganda</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/win_live_80_60.png')%>" alt=""></div>
 							<div class="idp_text">Microsoft Account<!--(Office 365, Windows Live, Hotmail)--></div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwebauth.umaryland.edu%2Fidp%2Fshibboleth">
+					<li><!-- href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fwebauth.umaryland.edu%2Fidp%2Fshibboleth" -->
+						<a class="institution identityprovider" data-href="urn:mace:incommon:umd.edu">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/umb_80_60.png')%>" alt=""></div>
 							<div class="idp_text">University of Maryland Baltimore</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fyahoo.cirrusidentity.com%2Fgateway">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fyahoo.cirrusidentity.com%2Fgateway">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/yahoo_80_60.png')%>" alt=""></div>
 							<div class="idp_text">Yahoo!</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Ajohnshopkins.edu">
+					<li><!-- href="https://federation.scienceforum.sc/Saml2/disco?entityID=urn%3Amace%3Aincommon%3Ajohnshopkins.edu" -->
+						<a class="institution identityprovider" data-href="urn:mace:incommon:johnshopkins.edu">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/jhu_80_60.png')%>" alt=""></div>
 							<div class="idp_text">Johns Hopkins University</div>
 						</a>
+
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fidp.ina-respond.net%2Fidp">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Fidp.ina-respond.net%2Fidp">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/ina_respond_80_60.png')%>" alt=""></div>
 							<div class="idp_text">INA-RESPOND</div>
 						</a>
 					</li>
-					<li>
-						<a class="idp_choice_link" target="_top" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flinkedin.cirrusidentity.com%2Fgateway">
+					<li><!-- XXX Needs data-href? -->
+						<a class="no-dh" href="https://federation.scienceforum.sc/Saml2/disco?entityID=https%3A%2F%2Flinkedin.cirrusidentity.com%2Fgateway">
 							<div class="idp_img"><img src="<%= require('../assets/niaid/ds-logos/linkedin.png')%>" alt=""></div>
 							<div class="idp_text">LinkedIn</div>
 						</a>
